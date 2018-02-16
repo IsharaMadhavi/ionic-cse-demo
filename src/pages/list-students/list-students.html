@@ -5,12 +5,12 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle icon-only>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Student list
+      List of Students
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -21,7 +21,7 @@
     <ion-item *ngFor="let student of students" (click)='student_selected(student)'>
       <h3>{{student.name}}</h3>
       <p>{{student.address}}</p>
-      <p>{{student.age}} years old</p>
+      <p>{{student.age}} years old!</p>
     </ion-item>
   </ion-list>
 </ion-content>
