@@ -19,11 +19,11 @@
 <ion-content padding>
   <form (ngSubmit)="submitStudent()">
     <ion-item>
-      <ion-label>Name</ion-label>
+      <ion-label>Name of the new student</ion-label>
       <ion-input type="text" [(ngModel)]="student.name" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Address</ion-label>
+      <ion-label>Residence</ion-label>
       <ion-input type="text" [(ngModel)]="student.address" name="name"></ion-input>
     </ion-item>
     <ion-item>
@@ -31,6 +31,6 @@
       <ion-input type="text" [(ngModel)]="student.age" name="name"></ion-input>
     </ion-item>
     <br/><br/>
-    <button ion-button type="submit" block>Add student</button>
+    <button ion-button type="submit" block>Add New student</button>
   </form>
 </ion-content>
